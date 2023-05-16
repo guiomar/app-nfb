@@ -1,3 +1,5 @@
+//GH
+//La lógica es un mapa para la etiqueta del estado y otro para el color que representa
 import React from "react";
 import { Link } from "@reach/router";
 
