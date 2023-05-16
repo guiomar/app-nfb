@@ -1,3 +1,5 @@
+//GH
+//Obtiene la información del dispositivo, muestra el componente Status y tiene botón de cierre de sesión
 import React from "react";
 import { navigate } from "@reach/router";
 
