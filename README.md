@@ -1,5 +1,10 @@
 # 🚀 TFG - Daniel Oriol Niso Galán
 
+Desarrollo e implementación de un sistema de neurofeedback para EEG inalámbrico
+
+2023
+
+
 ![App Screenshot](public/notion-react-starter.png)
 
 ### Getting Started
