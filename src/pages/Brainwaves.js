@@ -19,6 +19,7 @@ export function Brainwaves() {
   const [alert, setAlert] = useState("");
   //const [testFinished, setTestFinished] = useState(false);
   //const [scoreClass, setScoreClass] = useState("");
+  const fs = require('fs');
 
   useEffect(() => {
     if (!user) {
@@ -40,6 +41,7 @@ export function Brainwaves() {
   */
     const blurScore = 1;
     setBlurAmount(blurScore);
+    
 
     const subscription = notion.brainwaves("powerByBand").subscribe((brainwaves) => {
       const alphaCh1 = brainwaves.data.alpha[1];
@@ -66,6 +68,17 @@ export function Brainwaves() {
         setShowImage(true);
       }
  */
+      // Convert brainwaves data to CSV format
+      const csvData = Object.entries(brainwaves).map(([band, power]) => `${band},${power}`).join('\n');
+      
+      // Write CSV data to a file
+      fs.writeFile('brainwavesHola.csv', csvData, (err) => {
+        if (err) {
+          console.error('Error writing to CSV file:', err);
+        } else {
+          console.log('Brainwaves data saved to brainwaves.csv');
+        }
+      });
 
     });
 
