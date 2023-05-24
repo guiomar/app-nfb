@@ -4,6 +4,9 @@ Desarrollo e implementación de un sistema de neurofeedback para EEG inalámbric
 
 2023
 
+GRADO EN INGENIERÍA DE TECNOLOGÍAS Y SERVICIOS DE TELECOMUNICACIÓN
+Universidad Autónoma de Madrid
+
 
 ![App Screenshot](public/notion-react-starter.png)
 
